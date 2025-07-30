@@ -6,7 +6,6 @@
 
 A real-time competitive coding platform where developers battle head-to-head to solve algorithmic challenges under time pressure. Features live code sharing, test execution, and progress tracking.
 
-
 ## ✨ Features
 
 - **Real-time Code Battles**: Compete 1v1 in timed coding challenges
@@ -47,7 +46,6 @@ A real-time competitive coding platform where developers battle head-to-head to 
 ```bash
 git clone https://github.com/your-username/code-battle-arena.git
 cd code-battle-arena
-
 Install dependencies:
 
 bash
@@ -72,7 +70,7 @@ Terminal 2 (Backend):
 
 bash
 npm run server
-Open http://localhost:3000 in your browser
+Open http://localhost:3000 in your browser.
 
 🏗 Project Structure
 text
@@ -95,9 +93,9 @@ code-battle-arena/
 Vercel (Recommended)
 https://vercel.com/button
 
-Set up environment variables in Vercel dashboard
+Set up environment variables in Vercel dashboard.
 
-Deploy both frontend and serverless functions
+Deploy both frontend and serverless functions.
 
 Self-Hosted
 Build the application:
@@ -129,30 +127,18 @@ Your Name - @yourtwitter - youremail@example.com
 
 Project Link: https://github.com/your-username/code-battle-arena
 
-text
+🙏 Acknowledgments
+Judge0 for code execution API
 
-## Recommended Additions:
+Lucide Icons for beautiful icons
 
-1. **Add a screenshot**:
-   - Create a `public/screenshot.png` showing your battle interface
-   - Replace `./screenshot.png` in the README with your actual screenshot
+Monaco Editor for code editing
 
-2. **Add a demo video** (optional):
-   ```markdown
-   ## 🎥 Demo
-   [![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-Add acknowledgments if you used any third-party assets:
+🗺 Roadmap
+Spectator mode
 
-markdown
-## 🙏 Acknowledgments
-- [Judge0](https://judge0.com/) for code execution API
-- [Lucide Icons](https://lucide.dev/) for beautiful icons
-- [Monaco Editor](https://microsoft.github.io/monaco-editor/) for code editing
-Add a roadmap if you plan future features:
+Multi-language support
 
-markdown
-## 🗺 Roadmap
-- [ ] Spectator mode
-- [ ] Multi-language support
-- [ ] Tournament system
-- [ ] Code replay feature
+Tournament system
+
+Code replay feature
