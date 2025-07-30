@@ -44,6 +44,92 @@ A real-time competitive coding platform where developers battle head-to-head to 
 
 1. Clone the repository:
 
+```bash
 git clone https://github.com/your-username/code-battle-arena.git
 cd code-battle-arena
+```
+2.Install dependencies:
+
 ```bash
+npm install
+```
+
+3.Set up environment variables:
+```bash
+cp .env.example .env.local
+```
+Edit .env.local with your Judge0 API key:
+```bash
+JUDGE0_API_KEY=your_api_key_here
+NEXT_PUBLIC_SOCKET_URL=http://localhost:3001
+```
+### Running Locally
+
+Start the development servers (in separate terminals):
+
+**Terminal 1 (Frontend):**
+```bash
+npm run dev
+```
+
+**Terminal 2 (Backend):**
+```bash
+npm run server
+```
+
+Open http://localhost:3000 in your browser.
+
+### Project Structure
+```bash
+code-battle-arena/
+├── src/
+│   ├── app/               # Next.js app router
+│   ├── components/        # React components
+│   │   ├── BattleArena.tsx
+│   │   ├── CodeEditor.tsx
+│   │   ├── TestRunner.tsx
+│   │   └── ScoreBoard.tsx
+│   ├── lib/               # Utility functions
+│   │   ├── codeExecutor.ts
+│   │   └── problems.ts
+│   └── types/             # TypeScript types
+├── server.ts              # Socket.IO server
+├── package.json
+└── tsconfig.json
+```
+
+###🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1.Fork the project
+
+2.Create your feature branch (git checkout -b feature/AmazingFeature)
+
+3.Commit your changes (git commit -m 'Add some amazing feature')
+
+4.Push to the branch (git push origin feature/AmazingFeature)
+
+5.Open a Pull Request
+
+###📜 License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+###🙏 Acknowledgments
+
+Judge0 for code execution API
+
+Lucide Icons for beautiful icons
+
+Monaco Editor for code editing
+
+###🗺 Roadmap
+
+Spectator mode
+
+Multi-language support
+
+Tournament system
+
+Code replay feature
