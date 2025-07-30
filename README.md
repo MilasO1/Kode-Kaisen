@@ -6,7 +6,6 @@
 
 A real-time competitive coding platform where developers battle head-to-head to solve algorithmic challenges under time pressure. Features live code sharing, test execution, and progress tracking.
 
-![Battle Arena Screenshot](./screenshot.png) *(Add screenshot after uploading)*
 
 ## ✨ Features
 
@@ -48,3 +47,112 @@ A real-time competitive coding platform where developers battle head-to-head to 
 ```bash
 git clone https://github.com/your-username/code-battle-arena.git
 cd code-battle-arena
+
+Install dependencies:
+
+bash
+npm install
+Set up environment variables:
+
+bash
+cp .env.example .env.local
+Edit .env.local with your Judge0 API key:
+
+env
+JUDGE0_API_KEY=your_api_key_here
+NEXT_PUBLIC_SOCKET_URL=http://localhost:3001
+Running Locally
+Start the development servers (in separate terminals):
+
+Terminal 1 (Frontend):
+
+bash
+npm run dev
+Terminal 2 (Backend):
+
+bash
+npm run server
+Open http://localhost:3000 in your browser
+
+🏗 Project Structure
+text
+code-battle-arena/
+├── src/
+│   ├── app/               # Next.js app router
+│   ├── components/        # React components
+│   │   ├── BattleArena.tsx
+│   │   ├── CodeEditor.tsx
+│   │   ├── TestRunner.tsx
+│   │   └── ScoreBoard.tsx
+│   ├── lib/               # Utility functions
+│   │   ├── codeExecutor.ts
+│   │   └── problems.ts
+│   └── types/             # TypeScript types
+├── server.ts              # Socket.IO server
+├── package.json
+└── tsconfig.json
+🌐 Deployment
+Vercel (Recommended)
+https://vercel.com/button
+
+Set up environment variables in Vercel dashboard
+
+Deploy both frontend and serverless functions
+
+Self-Hosted
+Build the application:
+
+bash
+npm run build
+Start production server:
+
+bash
+npm start
+🤝 Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the project
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some amazing feature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📜 License
+Distributed under the MIT License. See LICENSE for more information.
+
+📧 Contact
+Your Name - @yourtwitter - youremail@example.com
+
+Project Link: https://github.com/your-username/code-battle-arena
+
+text
+
+## Recommended Additions:
+
+1. **Add a screenshot**:
+   - Create a `public/screenshot.png` showing your battle interface
+   - Replace `./screenshot.png` in the README with your actual screenshot
+
+2. **Add a demo video** (optional):
+   ```markdown
+   ## 🎥 Demo
+   [![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+Add acknowledgments if you used any third-party assets:
+
+markdown
+## 🙏 Acknowledgments
+- [Judge0](https://judge0.com/) for code execution API
+- [Lucide Icons](https://lucide.dev/) for beautiful icons
+- [Monaco Editor](https://microsoft.github.io/monaco-editor/) for code editing
+Add a roadmap if you plan future features:
+
+markdown
+## 🗺 Roadmap
+- [ ] Spectator mode
+- [ ] Multi-language support
+- [ ] Tournament system
+- [ ] Code replay feature
